@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The IBM Db2 driver does not support .NET Framework. -->
+    <TargetFrameworks>net10.0</TargetFrameworks>
+    <!-- RCS1194: test exception types do not need the standard constructors. -->
+    <NoWarn>$(NoWarn);RCS1194</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\IBM.Data.Db2.Vector\IBM.Data.Db2.Vector.csproj" />
+  </ItemGroup>
+
+</Project>

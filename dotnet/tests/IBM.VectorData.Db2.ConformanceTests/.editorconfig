@@ -1,0 +1,3 @@
+# IBM-contributed code: IBM copyright header instead of the repository default.
+[*.cs]
+file_header_template = Copyright (c) IBM Corporation. All rights reserved.

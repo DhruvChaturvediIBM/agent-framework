@@ -111,6 +111,11 @@
     <PackageVersion Include="CommunityToolkit.VectorData.AzureCosmosDB" Version="1.0.0" />
     <PackageVersion Include="CommunityToolkit.VectorData.InMemory" Version="1.0.1" />
     <PackageVersion Include="CommunityToolkit.VectorData.Qdrant" Version="1.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.VectorData.ConformanceTests" Version="10.10.0" />
+    <!-- IBM Db2 .NET driver: one package per OS; 10.x targets net10.0, 9.x targets net8.0 -->
+    <PackageVersion Include="Net.IBM.Data.Db2" Version="10.0.0.300" />
+    <PackageVersion Include="Net.IBM.Data.Db2-lnx" Version="10.0.0.300" />
+    <PackageVersion Include="Net.IBM.Data.Db2-osx" Version="10.0.0.300" />
     <!-- Agent SDKs -->
     <PackageVersion Include="GitHub.Copilot.SDK" Version="1.0.14" />
     <PackageVersion Include="ResponsibleAI.AgentHooks" Version="0.1.0-alpha.5" />
