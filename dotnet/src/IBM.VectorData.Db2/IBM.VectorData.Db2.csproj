@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The IBM Db2 driver ships for modern .NET only (no netstandard2.0 / .NET Framework). -->
+    <TargetFrameworks>$(TargetFrameworksCore)</TargetFrameworks>
+    <RootNamespace>IBM.VectorData.Db2</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <!-- MEVD9001: Microsoft.Extensions.VectorData provider-facing APIs are marked experimental. -->
+    <NoWarn>$(NoWarn);MEVD9001</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <InjectSharedThrow>true</InjectSharedThrow>
+  </PropertyGroup>
+
+  <Import Project="..\IBM.Data.Db2.Vector\Db2Driver.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\IBM.Data.Db2.Vector\IBM.Data.Db2.Vector.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.AI.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="IBM.VectorData.Db2.UnitTests" />
+    <InternalsVisibleTo Include="IBM.VectorData.Db2.ConformanceTests" />
+  </ItemGroup>
+
+</Project>

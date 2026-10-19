@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The IBM Db2 driver ships for modern .NET only (no netstandard2.0 / .NET Framework). -->
+    <TargetFrameworks>$(TargetFrameworksCore)</TargetFrameworks>
+    <RootNamespace>IBM.Data.Db2.Vector</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <InjectSharedThrow>true</InjectSharedThrow>
+  </PropertyGroup>
+
+  <Import Project="Db2Driver.props" />
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="IBM.Data.Db2.Vector.UnitTests" />
+  </ItemGroup>
+
+</Project>

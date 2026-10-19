@@ -604,6 +604,8 @@
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/Aspire.Hosting.AgentFramework.DevUI/Aspire.Hosting.AgentFramework.DevUI.csproj" />
+    <Project Path="src/IBM.Data.Db2.Vector/IBM.Data.Db2.Vector.csproj" />
+    <Project Path="src/IBM.VectorData.Db2/IBM.VectorData.Db2.csproj" />
     <Project Path="src/Microsoft.Agents.AI.A2A/Microsoft.Agents.AI.A2A.csproj" />
     <Project Path="src/Microsoft.Agents.AI.Abstractions/Microsoft.Agents.AI.Abstractions.csproj" />
     <Project Path="src/Microsoft.Agents.AI.Anthropic/Microsoft.Agents.AI.Anthropic.csproj" />
@@ -648,6 +650,7 @@
     <Project Path="tests/AzureAIAgentsPersistent.IntegrationTests/AzureAIAgentsPersistent.IntegrationTests.csproj" />
     <Project Path="tests/CopilotStudio.IntegrationTests/CopilotStudio.IntegrationTests.csproj" />
     <Project Path="tests/Foundry.Hosting.IntegrationTests.TestContainer/Foundry.Hosting.IntegrationTests.TestContainer.csproj" />
+    <Project Path="tests/IBM.VectorData.Db2.ConformanceTests/IBM.VectorData.Db2.ConformanceTests.csproj" />
     <Project Path="tests/Foundry.Hosting.IntegrationTests/Foundry.Hosting.IntegrationTests.csproj" />
     <Project Path="tests/Foundry.IntegrationTests/Foundry.IntegrationTests.csproj" />
     <Project Path="tests/Microsoft.Agents.AI.GitHub.Copilot.IntegrationTests/Microsoft.Agents.AI.GitHub.Copilot.IntegrationTests.csproj" />
@@ -662,6 +665,8 @@
   </Folder>
   <Folder Name="/Tests/UnitTests/">
     <Project Path="tests/Aspire.Hosting.AgentFramework.DevUI.UnitTests/Aspire.Hosting.AgentFramework.DevUI.UnitTests.csproj" />
+    <Project Path="tests/IBM.Data.Db2.Vector.UnitTests/IBM.Data.Db2.Vector.UnitTests.csproj" />
+    <Project Path="tests/IBM.VectorData.Db2.UnitTests/IBM.VectorData.Db2.UnitTests.csproj" />
     <Project Path="tests/Microsoft.Agents.AI.A2A.UnitTests/Microsoft.Agents.AI.A2A.UnitTests.csproj" />
     <Project Path="tests/Microsoft.Agents.AI.Abstractions.UnitTests/Microsoft.Agents.AI.Abstractions.UnitTests.csproj" />
     <Project Path="tests/Microsoft.Agents.AI.AgentHooks.UnitTests/Microsoft.Agents.AI.AgentHooks.UnitTests.csproj" />

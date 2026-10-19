@@ -1,0 +1,21 @@
+<Project>
+
+  <!--
+    References the IBM Db2 .NET driver. Every project that uses the driver must import this file:
+    central transitive pinning would otherwise pin the net10.0-only driver for net8.0/net9.0 too.
+  -->
+
+  <PropertyGroup>
+    <!-- The driver is published as one package per OS, each bundling the native CLI driver for that OS. -->
+    <Db2DriverPackage>Net.IBM.Data.Db2</Db2DriverPackage>
+    <Db2DriverPackage Condition="$([MSBuild]::IsOSPlatform('Linux'))">Net.IBM.Data.Db2-lnx</Db2DriverPackage>
+    <Db2DriverPackage Condition="$([MSBuild]::IsOSPlatform('OSX'))">Net.IBM.Data.Db2-osx</Db2DriverPackage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="$(Db2DriverPackage)" />
+    <!-- Driver 10.x targets net10.0 only; 9.x is the latest line that targets net8.0. -->
+    <PackageReference Update="$(Db2DriverPackage)" VersionOverride="9.0.0.400" Condition="'$(TargetFramework)' != 'net10.0'" />
+  </ItemGroup>
+
+</Project>
